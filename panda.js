@@ -8,7 +8,11 @@ $(document).ready(function(){
 		}else{
 			var debutPhrase = "J'éprouve de la ";
 		}
-		console.log(debutPhrase + tendance + ' pour les pandas ' + type);
+
+		var phrase = debutPhrase + tendance + ' pour les pandas ' + type;
+
+		$('body').append('<div>' + phrase + '</div>')
+		console.log(phrase);
 
 	});
 
